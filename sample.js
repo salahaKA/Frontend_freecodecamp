@@ -88,3 +88,105 @@ console.log(add())
 
 console.log("-----------------------------------------------")
 // js opearator
+
+const var5= 20
+const var6= 30
+console.log(var5+var6/2)
+console.log(100%50)
+console.log(8**2)
+
+
+// Increment
+let var7=0
+console.log(var7)
+console.log(var7++)
+console.log(var7)
+console.log(++var7)
+console.log(var7)
+console.log(var7--)
+console.log(var7)
+console.log(--var7)
+console.log(var7)
+
+// Assignment
+
+let x= 10
+console.log(x= x+5)
+console.log(x+=5)
+console.log(x-=5)
+console.log(x*=5)
+
+// comparison operator
+console.log(20>15)
+console.log(20===20)
+console.log(20!==20)
+console.log(20==='20')
+console.log(20=='20')
+console.log(typeof('20'))
+
+var strVar= '20'
+console.log(typeof(strVar))
+var strNum= Number('20')
+console.log(typeof(strNum))
+console.log(strNum==strVar)
+console.log(strNum===strVar)
+console.log(strNum!=strVar)
+console.log(strNum!==strVar)
+console.log(strNum===Number(strVar))
+
+console.log("-----------------")
+
+// comparison operation on object
+const obj2={
+    property1:'some value',
+    property2: 20
+};
+
+const arr3=[1,2,3,4,5]
+console.log(arr3==arr3)
+const arr4=[1,2,3,4,5]
+console.log(arr3===arr4)
+
+
+const obj3={
+    property1:'some value',
+    property2: 20
+};
+
+console.log(obj2===obj3)
+console.log(obj2==obj3)
+
+// turnary operator
+console.log("-----------------")
+const result= 20===20?'value match':'value donot match';
+console.log(result)
+
+let resultVar;
+if(20===20){
+    resultVar= 'value match'
+}else{
+    resultVar= 'vale not match'
+}
+console.log(resultVar)
+
+// logicl operator
+console.log(20===20 && 10===12)
+console.log(20===20 || 10===12)
+console.log(20===20 != 10===12)
+console.log(20===20 == 10===12)
+console.log(!(20===20 == 10===12))
+
+console.log("------------")
+// combination of all operator
+const result2= (((40/20)===2 && true))
+console.log(result2)
+const result3= !(((40/20)===2 && true))
+console.log(result3)
+const result4= !(((40/20)===2 && true) || ('yes'=== 'no'));
+console.log(result4)
+
+// -------------
+const fun= (()=>{
+    return 20;
+});
+console.log(fun())
