@@ -190,3 +190,7 @@ const fun= (()=>{
     return 20;
 });
 console.log(fun())
+
+console.log("-----------------------------")
+
+
