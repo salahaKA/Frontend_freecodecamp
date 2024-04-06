@@ -179,3 +179,23 @@ console.log(strConcate("Kadeeja"))
 
 console.log("--------------------------")
 // class
+
+class Sample{
+    findSmallInt(arr){
+         var sno=0;
+         for(let i=0;i<arr.length;i++){
+            if(i==0){
+                sno=arr[i]
+            }
+            if(arr[i]<sno){
+                sno= arr[i]
+            }
+         }
+         return sno;
+    }
+}
+const S1= new Sample();
+const numbers = '1,2,3,4,5'.split(',').map(Number); // Convert string to array of integers
+console.log(S1.findSmallInt(numbers));
+
+console.log("--------------------------")
