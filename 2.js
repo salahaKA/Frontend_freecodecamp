@@ -63,3 +63,119 @@ function fun1(a,b){
     console.log(b)
 }
 fun1(5,2)
+
+console.log("--------------------------")
+//Arrow function
+const arrowFunction=()=>{
+    console.log('Iam a arrow function')
+}
+arrowFunction()
+
+
+// Return value in python
+
+const fun2=()=>{
+    const b=20
+    return b<30;
+}
+const result6= fun2()
+console.log(result6)
+
+const result5= fun2();
+console.log("--------------------------")
+function fun3(){
+    console.log("hey function")
+}
+const obj4={
+    property1: 50,
+    property2: fun3
+}
+console.log(obj4.property2)
+
+console.log("--------------------------")
+const str1= 'zach'
+str1.replace('h','y')
+console.log(str1)
+const newstr= str1.replace('h','y')
+console.log(newstr)
+console.log(str1.toUpperCase())
+console.log(str1.toLowerCase())
+console.log(str1.toLocaleUpperCase())
+
+//3:55:09
+console.log("--------------------------")
+function multiply(a,b){
+    if (!a||!b || typeof(a)!= "number"||typeof(b)!="number"){
+        return 0;
+    }
+    return a*b
+}
+
+console.log(multiply(2,3))
+
+console.log("--------------------------")
+multiply1=(a,b)=> a*b;
+console.log(multiply1(2,3))
+
+console.log("--------------------------")
+function getPlanetname(id){
+    var name;
+    switch(id){
+        case 1:
+            name= 'Mercury'
+            break;
+        case 2:
+            name= 'Venus'
+            break
+        case 3:
+            name= 'Earth'
+            break
+        case 4:
+            name= 'Jupiter'
+            break
+        case 5:
+            name= 'Uranus'
+            break
+        case 6:
+            name= 'Saturn'
+            break;
+        case 7:
+            name= 'Uranus'
+            break
+        case 8:
+            name= 'Neptune'
+            break
+        default:
+            name= 'Invalid'
+            break;
+    }
+    return name;
+}
+console.log(getPlanetname(3))
+
+console.log("--------------------------")
+//Reverse string
+function reverse1(s){
+    return s.split("").reverse().join("");
+}
+console.log(reverse1("helooguys"))
+
+// Reverse array
+const arr= [1,2,3,4,5]
+console.log(arr.reverse())
+
+console.log("--------------------------")
+//String concatenation
+function strConcate(name){
+    
+    if(name=='Salaha'){
+        return "Hello user!"
+    }else{
+        return "Hii,"+name+"!";
+    }
+}
+console.log(strConcate("Salaha"))
+console.log(strConcate("Kadeeja"))
+
+console.log("--------------------------")
+// class
