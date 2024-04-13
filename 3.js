@@ -96,3 +96,104 @@ console.log(r3)
 
 console.log('-----------------------------')
 // Create function that remove first and last chars of a string. You don't have worry with string with less than two chars.
+const str2= 'hello'
+console.log(str2.substring(1,str2.length-2))
+console.log('-----------------------------')
+positiveCount=(arr)=>{
+    let sum=0;
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]>0){
+            sum+=1
+        }
+    }
+    return sum;
+}
+console.log(positiveCount([1,2,-3,4]))
+console.log('-----------------------------')
+CalcOp=(operation,value1,value2)=>{
+    let result7;
+    switch(operation){
+        case '+':
+            result7= value1+value2;
+            break;
+        case '-':
+            result7= value1-value2;
+            break;
+        case '*':
+            result7= value1*value2;
+            break;
+        case '/':
+            result7= value1/value2;
+            break;
+        default:
+            result7=console.log('Invalid')
+            break;
+
+    }
+    return result7
+}
+console.log(CalcOp('/',4,2))
+console.log(CalcOp('*',4,2))
+console.log(CalcOp('+',4,2))
+console.log(CalcOp('-',4,2))
+console.log(CalcOp('$',4,2))
+
+console.log('-----------------------------')
+repeatStr=(str,n)=>{
+    let startStr= '';
+    for(let i=0;i<str.length;i++){
+        startStr+=str
+    }
+    return startStr;
+}
+
+console.log(repeatStr('Hii',3))
+
+console.log('-----------------------------')
+let str= 'Hiiiiii'
+console.log(str.repeat(3))
+console.log('-----------------------------')
+// function to split a string and convert it into an array of words.
+//eg: "I love arrays" => ["I", "love","arrays"]
+
+strToArr= (str)=>{
+    return str.split(" ");
+}
+console.log(strToArr("I love my India"))
+console.log('-----------------------------')
+//Remove the spaces from the string then return the result string
+remvSpace=(str)=>{
+    const arr= str.split(" ")
+    let newArr=[];
+    for(let i=0;i<arr.length;i++){
+        const trimmedStr= arr[i].trim();
+        newArr.push(trimmedStr)
+    }
+
+    return newArr.join("");
+}
+console.log(remvSpace("I love my India"))
+console.log('-----------------------------')
+maps=(arr)=>{
+    const resArr=arr.map((arrItem)=>{
+        return arrItem*2;
+    })
+    return resArr;
+}
+console.log(maps([1,2,3,4,5]))
+console.log('-----------------------------')
+// Dragon quiz
+hero=(bullets,dragon)=>{
+    const result8= bullets/ dragon>= 2? true: false;
+    return result8
+}
+console.log(hero(8,4))
+console.log('-----------------------------')
+
+century=(year)=>{
+    if(year%100==0) return Number(year.toString().substr(0,2))
+    else return eval(Number(year.toString().substr(0,2))+1)
+
+}
+console.log(century(1900))
+console.log('-----------------------------')
